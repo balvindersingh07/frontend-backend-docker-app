@@ -212,6 +212,18 @@ docker push <dockerhub-username>/backend-app:latest
 
 ![Docker Build Frontend](screenshots/docker-build-frontend.png)
 
+### Docker Login + Frontend Build (Latest)
+
+![Docker Login and Frontend Build](screenshots/docker-login-and-frontend-build.png)
+
+### Docker Backend Build (Latest)
+
+![Docker Backend Build Latest](screenshots/docker-backend-build-latest.png)
+
+### Docker Hub Push Success (Frontend + Backend)
+
+![Docker Push Success](screenshots/docker-push-success.png)
+
 ---
 
 ## 8) Production-Readiness Notes
@@ -226,8 +238,8 @@ docker push <dockerhub-username>/backend-app:latest
 ## 9) Live Links
 
 - GitHub Repository: [balvindersingh07/frontend-backend-docker-app](https://github.com/balvindersingh07/frontend-backend-docker-app)
-- Docker Hub Frontend (after successful push): [docker.io/balvindersingh07/frontend-app](https://hub.docker.com/r/balvindersingh07/frontend-app)
-- Docker Hub Backend (after successful push): [docker.io/balvindersingh07/backend-app](https://hub.docker.com/r/balvindersingh07/backend-app)
+- Docker Hub Frontend: [docker.io/balvindersinghsoni/frontend-app](https://hub.docker.com/r/balvindersinghsoni/frontend-app)
+- Docker Hub Backend: [docker.io/balvindersinghsoni/backend-app](https://hub.docker.com/r/balvindersinghsoni/backend-app)
 
 ---
 
@@ -238,5 +250,5 @@ docker push <dockerhub-username>/backend-app:latest
 - [x] Docker Compose network communication configured (`backend` service name)
 - [x] `.gitignore` configured for non-required files
 - [x] GitHub repository pushed
-- [ ] Docker Hub images pushed (complete after Docker Hub auth/repo creation)
+- [x] Docker Hub images pushed
 - [x] Screenshots added to `screenshots/` folder
