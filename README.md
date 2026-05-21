@@ -190,11 +190,27 @@ docker push <dockerhub-username>/backend-app:latest
 
 ---
 
-## 7) Screenshots (Placeholders)
+## 7) Screenshots
 
-- `screenshots/form-page.png`
-- `screenshots/form-response.png`
-- `screenshots/docker-containers-running.png`
+### Docker Compose Build and Run
+
+![Docker Compose Up](screenshots/docker-compose-up.png)
+
+### Running Containers (`docker ps`)
+
+![Docker PS Output](screenshots/docker-ps.png)
+
+### GitHub Repository
+
+![GitHub Repository](screenshots/github-repo.png)
+
+### Docker Build Details (Backend)
+
+![Docker Build Backend](screenshots/docker-build-backend.png)
+
+### Docker Build Details (Frontend)
+
+![Docker Build Frontend](screenshots/docker-build-frontend.png)
 
 ---
 
@@ -223,4 +239,4 @@ docker push <dockerhub-username>/backend-app:latest
 - [x] `.gitignore` configured for non-required files
 - [x] GitHub repository pushed
 - [ ] Docker Hub images pushed (complete after Docker Hub auth/repo creation)
-- [ ] Screenshots added to `screenshots/` folder
+- [x] Screenshots added to `screenshots/` folder
