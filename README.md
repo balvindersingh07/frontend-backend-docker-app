@@ -136,6 +136,26 @@ docker push <dockerhub-username>/frontend-app:latest
 docker push <dockerhub-username>/backend-app:latest
 ```
 
+### If push fails with `insufficient_scope`
+
+1. Make sure you are logged in with the correct Docker Hub account:
+
+```bash
+docker logout
+docker login
+```
+
+2. Create these repositories in Docker Hub UI (if not already created):
+   - `<dockerhub-username>/frontend-app`
+   - `<dockerhub-username>/backend-app`
+
+3. Push again:
+
+```bash
+docker push <dockerhub-username>/frontend-app:latest
+docker push <dockerhub-username>/backend-app:latest
+```
+
 ---
 
 ## 6) API Contract
@@ -184,3 +204,23 @@ docker push <dockerhub-username>/backend-app:latest
 - Frontend uses environment variable for backend URL.
 - Clear separation between frontend and backend services.
 - Beginner-friendly and fully commented source code.
+
+---
+
+## 9) Live Links
+
+- GitHub Repository: [balvindersingh07/frontend-backend-docker-app](https://github.com/balvindersingh07/frontend-backend-docker-app)
+- Docker Hub Frontend (after successful push): [docker.io/balvindersingh07/frontend-app](https://hub.docker.com/r/balvindersingh07/frontend-app)
+- Docker Hub Backend (after successful push): [docker.io/balvindersingh07/backend-app](https://hub.docker.com/r/balvindersingh07/backend-app)
+
+---
+
+## 10) Final Submission Checklist
+
+- [x] Full-stack frontend + backend project created
+- [x] Dockerfiles for both services added
+- [x] Docker Compose network communication configured (`backend` service name)
+- [x] `.gitignore` configured for non-required files
+- [x] GitHub repository pushed
+- [ ] Docker Hub images pushed (complete after Docker Hub auth/repo creation)
+- [ ] Screenshots added to `screenshots/` folder
