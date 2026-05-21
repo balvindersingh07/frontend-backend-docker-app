@@ -1,0 +1,6 @@
+# Ignore cache and VCS files in Docker build context.
+__pycache__
+*.pyc
+.git
+.gitignore
+Dockerfile

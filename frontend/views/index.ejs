@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Frontend + Backend Docker App</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <main class="container">
+      <section class="card">
+        <h1>Contact Form</h1>
+        <p class="subtitle">Submit the form to send data to Flask backend API.</p>
+
+        <form action="/submit" method="POST" class="form">
+          <label for="name">Name</label>
+          <input
+            id="name"
+            name="name"
+            type="text"
+            placeholder="Enter your name"
+            required
+            value="<%= formData?.name || '' %>"
+          />
+
+          <label for="email">Email</label>
+          <input
+            id="email"
+            name="email"
+            type="email"
+            placeholder="Enter your email"
+            required
+            value="<%= formData?.email || '' %>"
+          />
+
+          <label for="message">Message</label>
+          <textarea
+            id="message"
+            name="message"
+            rows="5"
+            placeholder="Type your message"
+            required
+          ><%= formData?.message || '' %></textarea>
+
+          <button type="submit">Submit</button>
+        </form>
+
+        <% if (error) { %>
+        <div class="result error">
+          <h2>Error</h2>
+          <p><%= error %></p>
+        </div>
+        <% } %>
+
+        <% if (apiResponse) { %>
+        <div class="result success">
+          <h2>Backend Response</h2>
+          <pre><%= JSON.stringify(apiResponse, null, 2) %></pre>
+        </div>
+        <% } %>
+      </section>
+    </main>
+  </body>
+</html>

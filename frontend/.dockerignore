@@ -1,0 +1,6 @@
+# Dependency and metadata directories not needed in image build context.
+node_modules
+npm-debug.log
+.git
+.gitignore
+Dockerfile
